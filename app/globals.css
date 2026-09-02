@@ -1,5 +1,5 @@
 /* =========================================================
-   Vaira Ventures — Shared Stylesheet
+   Vaira Ventures — Global Stylesheet
    ========================================================= */
 
 :root {
@@ -28,6 +28,9 @@
 
   --container: 1200px;
   --transition: 0.35s cubic-bezier(.4,0,.2,1);
+
+  --font-body: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: var(--font-poppins), var(--font-inter), sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,7 +38,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-body);
   color: var(--dark);
   background: var(--white);
   line-height: 1.65;
@@ -43,7 +46,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.25;
   color: var(--dark);
@@ -180,7 +183,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   font-size: 20px;
 }
@@ -321,7 +324,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .hero-stats { display: flex; gap: 42px; flex-wrap: wrap; }
 .hero-stats .stat-num {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-heading);
   font-size: 30px;
   font-weight: 700;
 }
@@ -553,7 +556,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border: 1px solid var(--gray-300);
 }
 .stat-card .num {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-heading);
   font-size: 40px; font-weight: 700;
   background: var(--gradient-text); -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -621,15 +624,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .field textarea { resize: vertical; min-height: 130px; }
 
 .form-msg {
-  display: none;
   margin-top: 18px;
   padding: 14px 18px;
   border-radius: var(--radius-sm);
   font-size: 14.5px;
   font-weight: 500;
 }
-.form-msg.success { display: block; background: rgba(20,168,154,0.12); color: #0d746a; }
-.form-msg.error { display: block; background: rgba(220,53,69,0.1); color: #c0392b; }
+.form-msg.success { background: rgba(20,168,154,0.12); color: #0d746a; }
+.form-msg.error { background: rgba(220,53,69,0.1); color: #c0392b; }
 
 .map-frame {
   border-radius: var(--radius-lg);
@@ -659,6 +661,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .cta-banner::before { width: 240px; height: 240px; top: -100px; left: -60px; }
 .cta-banner::after { width: 180px; height: 180px; bottom: -80px; right: -40px; }
+.cta-btn-ghost { background: rgba(255,255,255,0.15); color: #fff; }
 
 /* ---------- Footer ---------- */
 .site-footer {
@@ -676,7 +679,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
 .footer-brand img { height: 38px; width: 38px; }
-.footer-brand span { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; color: var(--white); }
+.footer-brand span { font-family: var(--font-heading); font-weight: 700; font-size: 18px; color: var(--white); }
 .site-footer p { font-size: 14.5px; line-height: 1.7; }
 .site-footer h4 { color: var(--white); font-size: 15px; margin-bottom: 20px; }
 .site-footer ul li { margin-bottom: 12px; }
