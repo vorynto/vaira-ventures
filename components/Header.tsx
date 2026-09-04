@@ -77,19 +77,32 @@ export default function Header() {
       <div className={`overlay${menuOpen ? " show" : ""}`} onClick={() => setMenuOpen(false)} />
 
       <nav className={`mobile-menu${menuOpen ? " open" : ""}`}>
-        {NAV_LINKS.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={isActive(link.href) ? "active" : ""}
-            onClick={() => setMenuOpen(false)}
-          >
-            {link.label}
-          </Link>
-        ))}
-        <Link href={ctaHref} className="btn btn-primary btn-block" onClick={() => setMenuOpen(false)}>
-          {ctaLabel}
+        <Link href="/" className="mobile-menu-brand" onClick={() => setMenuOpen(false)}>
+          <img src="/assets/logo.png" alt="Vaira Ventures logo" />
+          <span>
+            Vaira Ventures
+            <small>Jockey &amp; First Cry Outlet</small>
+          </span>
         </Link>
+
+        <div className="mobile-menu-links">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={isActive(link.href) ? "active" : ""}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className="mobile-menu-footer">
+          <Link href={ctaHref} className="btn btn-primary btn-block" onClick={() => setMenuOpen(false)}>
+            {ctaLabel}
+          </Link>
+        </div>
       </nav>
     </>
   );
