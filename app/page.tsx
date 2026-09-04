@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
+import HeroSlider from "@/components/HeroSlider";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -10,72 +11,30 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* ===== Hero ===== */}
-      <section className="hero">
-        <div className="hero-bg" />
-        <div className="blob blob-1" />
-        <div className="blob blob-2" />
-        <div className="container hero-grid">
-          <div>
-            <div className="hero-tag">
-              <span className="dot" /> Now Open in Singaperumal Kovil, Chennai
-            </div>
-            <h1>
-              Trusted Style for <span className="text-gradient">Every Age</span>, Under One Roof
-            </h1>
-            <p className="lead">
-              Vaira Ventures proudly brings <strong>Jockey</strong> and <strong>First Cry</strong> together at
-              Singaperumal Kovil — premium innerwear &amp; apparel for the family, plus everything you need for
-              your little ones.
-            </p>
-            <div className="hero-actions">
-              <Link href="/outlets" className="btn btn-primary">
-                Explore Our Outlets
-              </Link>
-              <Link href="/contact" className="btn btn-outline">
-                Get Directions
-              </Link>
-            </div>
-            <div className="hero-stats">
-              <div>
-                <div className="stat-num">
-                  <Counter target={2} />
-                </div>
-                <div className="stat-label">Flagship Brands</div>
+      {/* ===== Hero Slider ===== */}
+      <HeroSlider />
+
+      {/* ===== Stats Strip ===== */}
+      <section className="hero-stats-strip">
+        <div className="container">
+          <div className="grid grid-3">
+            <div>
+              <div className="stat-num">
+                <Counter target={2} />
               </div>
-              <div>
-                <div className="stat-num">
-                  <Counter target={1000} suffix="+" />
-                </div>
-                <div className="stat-label">Happy Customers</div>
-              </div>
-              <div>
-                <div className="stat-num">
-                  <Counter target={7} suffix="-Day" />
-                </div>
-                <div className="stat-label">Open Every Week</div>
-              </div>
+              <div className="stat-label">Flagship Brands</div>
             </div>
-          </div>
-          <div className="hero-visual">
-            <div className="hero-card">
-              <img src="/assets/logo.png" alt="Vaira Ventures" />
-            </div>
-            <div className="floating-chip chip-1">
-              <div className="chip-icon">✓</div>
-              <div>
-                100% Genuine
-                <br />
-                Products
+            <div>
+              <div className="stat-num">
+                <Counter target={1000} suffix="+" />
               </div>
+              <div className="stat-label">Happy Customers</div>
             </div>
-            <div className="floating-chip chip-2">
-              <div className="chip-icon">★</div>
-              <div>
-                Trusted Local
-                <br />
-                Franchise
+            <div>
+              <div className="stat-num">
+                <Counter target={7} suffix="-Day" />
               </div>
+              <div className="stat-label">Open Every Week</div>
             </div>
           </div>
         </div>
