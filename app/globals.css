@@ -163,14 +163,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 100%;
   z-index: 1000;
   padding: 18px 0;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
   transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--shadow-sm);
   padding: 10px 0;
+  box-shadow: var(--shadow-md);
 }
 
 .nav-wrap {
