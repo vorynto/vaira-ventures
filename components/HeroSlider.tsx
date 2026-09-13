@@ -18,17 +18,6 @@ type Slide = {
 
 const SLIDES: Slide[] = [
   {
-    id: "display",
-    image: "/assets/store-display.jpg",
-    focus: "center 35%",
-    eyebrow: "Jockey Showroom · Singaperumal Kovil",
-    heading: "Discover Comfort That",
-    accent: "Fits Your Life",
-    text: "From everyday essentials to loungewear favourites, step inside and explore Jockey's latest collection at our Singaperumal Kovil showroom.",
-    primary: { label: "Explore Our Outlets", href: "/outlets" },
-    secondary: { label: "Get Directions", href: "/contact" },
-  },
-  {
     id: "front",
     image: "/assets/store-front.jpg",
     focus: "center 60%",
@@ -38,6 +27,17 @@ const SLIDES: Slide[] = [
     text: "Conveniently located and easy to spot — visit our exclusive Jockey showroom for the brand's complete range, all in one place.",
     primary: { label: "Visit Us Today", href: "/contact" },
     secondary: { label: "About Vaira Ventures", href: "/about" },
+  },
+  {
+    id: "display",
+    image: "/assets/store-display.jpg",
+    focus: "center 35%",
+    eyebrow: "Jockey Showroom · Singaperumal Kovil",
+    heading: "Discover Comfort That",
+    accent: "Fits Your Life",
+    text: "From everyday essentials to loungewear favourites, step inside and explore Jockey's latest collection at our Singaperumal Kovil showroom.",
+    primary: { label: "Explore Our Outlets", href: "/outlets" },
+    secondary: { label: "Get Directions", href: "/contact" },
   },
   {
     id: "menswear",

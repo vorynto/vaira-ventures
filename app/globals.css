@@ -390,6 +390,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   width: 100%;
   height: 92vh;
+  height: 92dvh;
   min-height: 600px;
   max-height: 820px;
   overflow: hidden;
@@ -413,8 +414,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(8, 10, 20, 0.65), transparent 55%),
-    linear-gradient(100deg, rgba(10, 14, 30, 0.86) 0%, rgba(23, 27, 46, 0.62) 35%, rgba(43, 57, 144, 0.3) 62%, rgba(20, 168, 154, 0.16) 100%);
+    linear-gradient(to top, rgba(5, 6, 14, 0.78), transparent 60%),
+    linear-gradient(100deg, rgba(6, 8, 20, 0.92) 0%, rgba(10, 13, 28, 0.8) 30%, rgba(23, 27, 46, 0.55) 52%, rgba(43, 57, 144, 0.32) 72%, rgba(20, 168, 154, 0.18) 100%);
 }
 
 .hero-slide-content {
@@ -438,13 +439,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   backdrop-filter: blur(4px);
 }
 .hero-slide-inner .hero-tag.light .dot { background: var(--secondary-light); }
-.hero-slide-inner h1 { color: var(--white); margin-bottom: 18px; }
+.hero-slide-inner h1 {
+  color: var(--white);
+  margin-bottom: 18px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
 .hero-slide-inner h1 .accent { color: var(--secondary-light); }
 .hero-slide-inner p {
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.92);
   font-size: 17.5px;
   max-width: 520px;
   margin-bottom: 32px;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes heroTextIn {
@@ -534,11 +540,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-stats-strip .stat-label { font-size: 13.5px; color: var(--gray-500); text-align: center; }
 
 @media (max-width: 980px) {
-  .hero-slider { height: 78vh; min-height: 520px; }
+  .hero-slider { height: 78vh; height: 78dvh; min-height: 520px; }
 }
 
 @media (max-width: 760px) {
-  .hero-slider { height: 88vh; min-height: 560px; }
+  .hero-slider { height: 88vh; height: 88dvh; min-height: 560px; }
   .hero-slide-inner p { font-size: 15.5px; }
   .slider-arrow { display: none; }
   .hero-actions .btn { flex: 1; }
