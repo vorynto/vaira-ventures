@@ -182,13 +182,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 20px;
 }
 
-.brand img { height: 42px; width: 42px; transition: transform var(--transition); }
+.brand img { height: 56px; width: 56px; transition: transform var(--transition); }
 .brand:hover img { transform: rotate(-8deg) scale(1.05); }
 
 .brand span { letter-spacing: 0.5px; }
@@ -414,8 +414,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(5, 6, 14, 0.78), transparent 60%),
-    linear-gradient(100deg, rgba(6, 8, 20, 0.92) 0%, rgba(10, 13, 28, 0.8) 30%, rgba(23, 27, 46, 0.55) 52%, rgba(43, 57, 144, 0.32) 72%, rgba(20, 168, 154, 0.18) 100%);
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    linear-gradient(to top, rgba(4, 5, 12, 0.85), transparent 65%),
+    linear-gradient(100deg, rgba(4, 5, 14, 0.95) 0%, rgba(8, 10, 22, 0.86) 32%, rgba(20, 23, 40, 0.64) 55%, rgba(43, 57, 144, 0.38) 75%, rgba(20, 168, 154, 0.22) 100%);
 }
 
 .hero-slide-content {

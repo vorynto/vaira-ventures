@@ -20,7 +20,7 @@ const SLIDES: Slide[] = [
   {
     id: "front",
     image: "/assets/store-front.jpg",
-    focus: "center 60%",
+    focus: "center top",
     eyebrow: "Now Open Near You",
     heading: "Your Neighbourhood",
     accent: "Jockey Store",
