@@ -425,10 +425,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   padding-top: 60px;
   pointer-events: none;
 }
-.hero-slide-content .container { pointer-events: auto; }
+.hero-slide-content .container {
+  pointer-events: auto;
+  margin: 0;
+  width: 100%;
+  padding-left: max(72px, 7vw);
+}
 
 .hero-slide-inner {
   max-width: 620px;
@@ -546,6 +552,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (max-width: 760px) {
   .hero-slider { height: 88vh; height: 88dvh; min-height: 560px; }
+  .hero-slide-content .container { padding-left: 24px; }
   .hero-slide-inner p { font-size: 15.5px; }
   .slider-arrow { display: none; }
   .hero-actions .btn { flex: 1; }
