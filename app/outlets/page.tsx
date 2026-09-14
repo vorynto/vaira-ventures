@@ -148,20 +148,18 @@ export default function OutletsPage() {
       </section>
 
       {/* ===== CTA ===== */}
-      <section className="section" style={{ paddingTop: 100 }}>
-        <Reveal className="cta-banner">
-          <h2>Plan Your Visit Today</h2>
-          <p>Need help with directions or store availability? Our team is just a call or message away.</p>
-          <div className="cta-actions">
-            <Link href="/contact" className="btn btn-light">
-              Contact Us
-            </Link>
-            <a href="tel:+910000000000" className="btn cta-btn-ghost">
-              Call Now
-            </a>
-          </div>
-        </Reveal>
-      </section>
+      <Reveal className="cta-banner">
+        <h2>Plan Your Visit Today</h2>
+        <p>Need help with directions or store availability? Our team is just a call or message away.</p>
+        <div className="cta-actions">
+          <Link href="/contact" className="btn btn-light">
+            Contact Us
+          </Link>
+          <a href="tel:+910000000000" className="btn cta-btn-ghost">
+            Call Now
+          </a>
+        </div>
+      </Reveal>
     </>
   );
 }

@@ -177,20 +177,18 @@ export default function AboutPage() {
       </section>
 
       {/* ===== CTA ===== */}
-      <section className="section" style={{ paddingTop: 0 }}>
-        <Reveal className="cta-banner">
-          <h2>Come Experience the Vaira Ventures Difference</h2>
-          <p>Visit our Singaperumal Kovil outlet and see why our customers keep coming back.</p>
-          <div className="cta-actions">
-            <Link href="/outlets" className="btn btn-light">
-              Our Outlets
-            </Link>
-            <Link href="/contact" className="btn cta-btn-ghost">
-              Contact Us
-            </Link>
-          </div>
-        </Reveal>
-      </section>
+      <Reveal className="cta-banner">
+        <h2>Come Experience the Vaira Ventures Difference</h2>
+        <p>Visit our Singaperumal Kovil outlet and see why our customers keep coming back.</p>
+        <div className="cta-actions">
+          <Link href="/outlets" className="btn btn-light">
+            Our Outlets
+          </Link>
+          <Link href="/contact" className="btn cta-btn-ghost">
+            Contact Us
+          </Link>
+        </div>
+      </Reveal>
     </>
   );
 }

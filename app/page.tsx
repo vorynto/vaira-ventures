@@ -130,20 +130,18 @@ export default function HomePage() {
       </section>
 
       {/* ===== CTA ===== */}
-      <section className="section" style={{ paddingTop: 0 }}>
-        <Reveal className="cta-banner">
-          <h2>Ready to Explore Our Collection?</h2>
-          <p>Drop by our Singaperumal Kovil outlet today, or get in touch with our team for more information.</p>
-          <div className="cta-actions">
-            <Link href="/outlets" className="btn btn-light">
-              Our Outlets
-            </Link>
-            <Link href="/contact" className="btn cta-btn-ghost">
-              Contact Us
-            </Link>
-          </div>
-        </Reveal>
-      </section>
+      <Reveal className="cta-banner">
+        <h2>Ready to Explore Our Collection?</h2>
+        <p>Drop by our Singaperumal Kovil outlet today, or get in touch with our team for more information.</p>
+        <div className="cta-actions">
+          <Link href="/outlets" className="btn btn-light">
+            Our Outlets
+          </Link>
+          <Link href="/contact" className="btn cta-btn-ghost">
+            Contact Us
+          </Link>
+        </div>
+      </Reveal>
     </>
   );
 }
